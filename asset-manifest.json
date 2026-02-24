@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shoebwebsite/static/css/main.0fed5ddd.css",
-    "main.js": "/shoebwebsite/static/js/main.c33bc2e1.js",
+    "main.js": "/shoebwebsite/static/js/main.f6e77f20.js",
     "static/js/453.008f490a.chunk.js": "/shoebwebsite/static/js/453.008f490a.chunk.js",
     "static/media/ms pop video.mp4": "/shoebwebsite/static/media/ms pop video.7a31cf2725300056fb2c.mp4",
     "static/media/mspopwork-nagpur509.jpg": "/shoebwebsite/static/media/mspopwork-nagpur509.37815acd42926e193d3d.jpg",
@@ -222,11 +222,11 @@
     "static/media/mspopwork-nagpur620.jpg": "/shoebwebsite/static/media/mspopwork-nagpur620.912f16b8f26e20917879.jpg",
     "index.html": "/shoebwebsite/index.html",
     "main.0fed5ddd.css.map": "/shoebwebsite/static/css/main.0fed5ddd.css.map",
-    "main.c33bc2e1.js.map": "/shoebwebsite/static/js/main.c33bc2e1.js.map",
+    "main.f6e77f20.js.map": "/shoebwebsite/static/js/main.f6e77f20.js.map",
     "453.008f490a.chunk.js.map": "/shoebwebsite/static/js/453.008f490a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fed5ddd.css",
-    "static/js/main.c33bc2e1.js"
+    "static/js/main.f6e77f20.js"
   ]
 }
