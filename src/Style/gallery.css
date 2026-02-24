@@ -1,0 +1,175 @@
+.gallerySection {
+  padding: 120px 20px 80px;
+  background: #0f172a;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.galleryTitle {
+  font-size: 38px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 40px;
+}
+
+.galleryFilters {
+  margin-bottom: 40px;
+}
+
+.galleryFilters button {
+  margin: 8px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galleryFilters button:hover,
+.galleryFilters .active {
+  background: #d4af37;
+  color: #0f172a;
+  border-color: #d4af37;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.galleryItem {
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.4s;
+  border-radius: 14px;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.08);
+  filter: brightness(85%);
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popupImage {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 16px;
+  animation: zoomIn 0.3s ease;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .galleryItem img {
+    height: 220px;
+  }
+}
+
+.galleryFilters {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 8px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  justify-content: center;
+}
+
+.galleryFilters::-webkit-scrollbar {
+  height: 6px; /* horizontal scrollbar height */
+}
+
+.galleryFilters::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.galleryFilters::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+.galleryFilters::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Make buttons a bit more compact on small screens */
+@media (max-width: 768px) {
+  .galleryFilters {
+    padding: 12px 16px; /* side padding so first/last button isn't cut off */
+    margin: 0 -20px 40px; /* extend to screen edges (matches section padding) */
+    justify-content: flex-start;
+  }
+
+  .galleryFilters button {
+    margin: 0; /* remove old margin – we use gap now */
+    padding: 10px 18px; /* slightly smaller padding */
+    font-size: 0.95rem; /* bit smaller text */
+    white-space: nowrap; /* prevent button text from wrapping */
+  }
+
+  .galleryItem img {
+    height: 220px;
+  }
+}
+
+/* Optional: visual hint that it scrolls */
+.galleryFilters {
+  /* faint gradient on edges when scrollable – nice touch */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}

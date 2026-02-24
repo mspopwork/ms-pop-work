@@ -1,0 +1,238 @@
+/* ===============================
+   HERO SECTION - DARK LUXURY
+================================= */
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 70px; /* Adjust to match your fixed header height */
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.heroSection__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.heroSection__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.45) 0%,
+    rgba(15, 23, 42, 0.75) 50%,
+    rgba(15, 23, 42, 0.92) 100%
+  );
+  z-index: 2;
+}
+
+.heroSection__content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f8fafc;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.heroSection__title {
+  font-size: clamp(2.8rem, 7vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+}
+
+.heroSection__subtitle {
+  font-size: clamp(1.15rem, 3.2vw, 1.45rem);
+  color: #cbd5e1;
+  max-width: 720px;
+  margin-bottom: 2.8rem;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.heroSection__subtitle br {
+  content: "";
+  display: block;
+  margin-bottom: 0.35em;
+}
+
+.heroSection__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.heroSection__btn {
+  padding: 0.9rem 2.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.heroSection__btn--primary {
+  background: #d4af37;
+  color: #0f172a;
+  border: none;
+}
+
+.heroSection__btn--primary:hover {
+  background: #b8962e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
+}
+
+.heroSection__btn--secondary {
+  background: transparent;
+  border: 1.5px solid #d4af37;
+  color: #d4af37;
+}
+
+.heroSection__btn--secondary:hover {
+  background: #d4af37;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   CONTACT POPUP
+================================= */
+
+.heroPopup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.heroPopup__box {
+  background: rgba(30, 41, 59, 0.92);
+  backdrop-filter: blur(14px);
+  padding: 2.5rem 2rem;
+  width: min(90%, 360px);
+  border-radius: 16px;
+  text-align: center;
+  color: #f8fafc;
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.heroPopup__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 1.8rem;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.heroPopup__close:hover {
+  color: #d4af37;
+  transform: rotate(90deg);
+}
+
+.heroPopup h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+  color: #f8fafc;
+}
+
+.heroPopup__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  padding: 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.heroPopup__link--call {
+  background: #d4af37;
+  color: #0f172a;
+}
+
+.heroPopup__link--call:hover {
+  background: #b8962e;
+  transform: translateY(-2px);
+}
+
+.heroPopup__link--whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.heroPopup__link--whatsapp:hover {
+  background: #1ebe5b;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .heroSection {
+    margin-top: 60px;
+  }
+
+  .heroSection__buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .heroSection__btn {
+    width: 100%;
+    max-width: 340px;
+    padding: 1rem 2.2rem;
+  }
+
+  .heroSection__subtitle {
+    line-height: 1.6;
+  }
+
+  .heroSection__subtitle br {
+    margin-bottom: 0.25em;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection__title {
+    font-size: 2.5rem;
+  }
+
+  .heroSection__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .heroPopup__box {
+    padding: 2rem 1.5rem;
+  }
+}

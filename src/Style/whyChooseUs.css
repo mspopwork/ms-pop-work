@@ -1,0 +1,94 @@
+/* ===============================
+   WHY CHOOSE US - ROYAL PREMIUM
+================================= */
+
+.whySection {
+  padding: 100px 20px;
+  background: #0f172a;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.whySection__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading */
+.whySection__heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.whySection__subheading {
+  max-width: 650px;
+  margin: 0 auto 60px;
+  color: #cbd5e1;
+  font-size: 16px;
+}
+
+/* Grid */
+.whySection__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.whySection__card {
+  background: rgba(30, 41, 59, 0.7);
+  padding: 40px 25px;
+  border-radius: 16px;
+  border: 1px solid rgb(255, 255, 255);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon */
+.whySection__icon {
+  color: #d4af37;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Title */
+.whySection__card h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Text */
+.whySection__card p {
+  font-size: 14px;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* Hover */
+.whySection__card:hover {
+  transform: translateY(-12px);
+  border-color: #d4af37;
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .whySection__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .whySection__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whySection__heading {
+    font-size: 28px;
+  }
+}

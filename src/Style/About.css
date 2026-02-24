@@ -1,0 +1,126 @@
+/* ===============================
+   ABOUT SECTION - ROYAL PREMIUM
+================================= */
+
+.aboutSection {
+  padding: 100px 20px;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.aboutSection__container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ===============================
+   IMAGE
+================================= */
+
+.aboutSection__image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutSection__image img {
+  width: 100%;
+  border-radius: 16px;
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  transition: 0.4s ease;
+}
+
+.aboutSection__image img:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   CONTENT
+================================= */
+
+.aboutSection__content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutSection__heading {
+  font-size: 40px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.aboutSection__text {
+  margin-bottom: 20px;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.aboutSection__text span {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+/* ===============================
+   STATS
+================================= */
+
+.aboutSection__stats {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.aboutSection__stats h3 {
+  color: #d4af37;
+  font-size: 28px;
+}
+
+.aboutSection__stats p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   BUTTON
+================================= */
+
+.aboutSection__btn {
+  padding: 12px 28px;
+  background: #d4af37;
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.aboutSection__btn:hover {
+  background: #b8962e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 992px) {
+  .aboutSection__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutSection__stats {
+    justify-content: center;
+  }
+
+  .aboutSection__heading {
+    font-size: 30px;
+  }
+}

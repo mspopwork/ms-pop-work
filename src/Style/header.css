@@ -1,0 +1,226 @@
+/* ===============================
+   ROYAL PREMIUM HEADER
+================================= */
+
+.headerNav {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.headerNav__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===============================
+   LOGO
+================================= */
+
+.headerNav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.headerNav__logo img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.4));
+}
+
+.headerNav__logo img:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   DESKTOP MENU
+================================= */
+
+.headerNav__menuDesktop {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+/* Links + Buttons same style */
+.headerNav__link {
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+  padding: 0;
+}
+
+/* Underline effect */
+.headerNav__link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: #d4af37;
+  transition: 0.3s ease;
+}
+
+.headerNav__link:hover {
+  color: #d4af37;
+}
+
+.headerNav__link:hover::after {
+  width: 100%;
+}
+
+/* Remove default button outline */
+.headerNav__link:focus {
+  outline: none;
+}
+
+/* ===============================
+   OPTIONAL CONTACT BUTTON STYLE
+================================= */
+
+.headerNav__contactBtn {
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid #d4af37;
+  transition: 0.3s ease;
+}
+
+.headerNav__contactBtn:hover {
+  background: #d4af37;
+  color: #0f172a;
+}
+
+.headerNav__contactBtn:hover::after {
+  display: none;
+}
+
+/* ===============================
+   HAMBURGER
+================================= */
+
+.headerNav__toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.headerNav__toggle span {
+  width: 25px;
+  height: 3px;
+  background: #f8fafc;
+  transition: 0.3s ease;
+}
+
+/* Animate to X */
+.headerNav__toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.headerNav__toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.headerNav__toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===============================
+   MOBILE MENU
+================================= */
+
+.headerNav__mobile {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  gap: 25px;
+  align-items: center;
+  box-shadow: -6px 0 20px rgba(0, 0, 0, 0.5);
+  transition: right 0.4s ease-in-out;
+  z-index: 999;
+  border-left: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.headerNav__mobile.active {
+  right: 0;
+}
+
+/* Close Button */
+.headerNav__closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #f8fafc;
+  transition: 0.3s;
+}
+
+.headerNav__closeBtn:hover {
+  color: #d4af37;
+}
+
+/* Mobile Links + Buttons */
+.headerNav__mobileLink {
+  text-decoration: none;
+  font-size: 18px;
+  color: #f8fafc;
+  font-weight: 500;
+  transition: 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.headerNav__mobileLink:hover {
+  color: #d4af37;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .headerNav__menuDesktop {
+    display: none;
+  }
+
+  .headerNav__toggle {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .headerNav__mobile {
+    display: none;
+  }
+}
