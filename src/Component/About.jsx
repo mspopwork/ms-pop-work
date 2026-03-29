@@ -16,7 +16,7 @@ function About() {
           <h2 className="aboutSection__heading">About Us</h2>
 
           <p className="aboutSection__text">
-            At <span>Ms POP Work</span>, we specialize in delivering premium POP
+            At <span>Ms p o p work Nagpur - False Ceiling Contractor</span>, we specialize in delivering premium POP
             designs and elegant interior craftsmanship that elevate living
             spaces with style and sophistication.
           </p>

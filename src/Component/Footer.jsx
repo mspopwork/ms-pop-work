@@ -7,7 +7,9 @@ function Footer() {
       <div className="footerSection__container">
         {/* LEFT SIDE - BUSINESS DETAILS */}
         <div className="footerSection__left">
-          <h3 className="footerSection__title">Ms POP Work</h3>
+          <h3 className="footerSection__title">
+            Ms p o p work Nagpur - False Ceiling Contractor
+          </h3>
 
           <p>
             <strong>Address:</strong>
@@ -20,7 +22,7 @@ function Footer() {
           <p>
             <strong>Email:</strong>
             <br />
-           skshoeb753@gmail.com
+            skshoeb753@gmail.com
           </p>
 
           <p>
