@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ms-pop-work/static/css/main.0fed5ddd.css",
-    "main.js": "/ms-pop-work/static/js/main.d9b8d700.js",
+    "main.js": "/ms-pop-work/static/js/main.633ab79e.js",
     "static/js/453.008f490a.chunk.js": "/ms-pop-work/static/js/453.008f490a.chunk.js",
     "static/media/ms pop video.mp4": "/ms-pop-work/static/media/ms pop video.7a31cf2725300056fb2c.mp4",
     "static/media/mspopwork-nagpur509.jpg": "/ms-pop-work/static/media/mspopwork-nagpur509.37815acd42926e193d3d.jpg",
@@ -222,11 +222,11 @@
     "static/media/mspopwork-nagpur620.jpg": "/ms-pop-work/static/media/mspopwork-nagpur620.912f16b8f26e20917879.jpg",
     "index.html": "/ms-pop-work/index.html",
     "main.0fed5ddd.css.map": "/ms-pop-work/static/css/main.0fed5ddd.css.map",
-    "main.d9b8d700.js.map": "/ms-pop-work/static/js/main.d9b8d700.js.map",
+    "main.633ab79e.js.map": "/ms-pop-work/static/js/main.633ab79e.js.map",
     "453.008f490a.chunk.js.map": "/ms-pop-work/static/js/453.008f490a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fed5ddd.css",
-    "static/js/main.d9b8d700.js"
+    "static/js/main.633ab79e.js"
   ]
 }
